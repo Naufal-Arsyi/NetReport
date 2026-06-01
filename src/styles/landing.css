@@ -1,0 +1,25 @@
+/* ── Landing page ────────────────────────────────────────── */
+.landing-page { background: var(--dark); min-height: 600px; }
+
+.landing-hero { padding: 72px 24px 60px; text-align: center; }
+.landing-chip { display: inline-flex; align-items: center; gap: 6px; background: rgba(2,132,199,0.15); border: 1px solid rgba(2,132,199,0.35); padding: 5px 14px; border-radius: var(--r-pill); font-size: 12px; font-weight: 600; color: #38BDF8; margin-bottom: 24px; letter-spacing: 0.5px; }
+.landing-title { font-family: var(--font-display); font-size: clamp(30px, 5.5vw, 42px); font-weight: 800; line-height: 1.15; color: #fff; margin-bottom: 16px; letter-spacing: -1px; }
+.landing-title-accent { color: #38BDF8; }
+.landing-subtitle { color: #94A3B8; font-size: 17px; line-height: 1.65; max-width: 500px; margin: 0 auto 40px; }
+.landing-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+.landing-features { background: var(--bg); border-radius: 28px 28px 0 0; padding: 52px 24px 60px; }
+.landing-features-title { font-family: var(--font-display); font-size: 26px; font-weight: 800; color: var(--dark); text-align: center; margin-bottom: 36px; }
+
+.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; }
+.feature-card { background: var(--white); border-radius: var(--r-lg); border: 0.5px solid var(--border); padding: 20px 14px; text-align: center; }
+.feature-icon-wrap { width: 42px; height: 42px; background: #E0F2FE; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; }
+.feature-title { font-weight: 700; font-size: 14px; color: var(--dark); margin-bottom: 4px; }
+.feature-desc { color: var(--text-muted); font-size: 13px; line-height: 1.5; }
+
+/* Tech login modal */
+.tech-login-brand { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+.tech-login-name { font-family: var(--font-display); font-weight: 800; font-size: 15px; }
+.tech-login-form { display: flex; flex-direction: column; gap: 10px; }
+.tech-login-error { color: #EF4444; font-size: 13px; }
+.tech-login-hint { color: var(--text-faint); font-size: 12px; text-align: center; margin-top: 2px; }

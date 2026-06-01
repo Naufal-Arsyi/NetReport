@@ -1,0 +1,86 @@
+/* ── Results page ────────────────────────────────────────── */
+.results-page { background: var(--bg); min-height: 600px; }
+
+/* Print receipt */
+.print-receipt { display: none; padding: 40px; max-width: 500px; margin: 0 auto; font-family: monospace; font-size: 13px; line-height: 1.8; }
+@media print { .print-receipt { display: block; } }
+.print-receipt-title { font-size: 18px; font-weight: bold; text-align: center; }
+.print-receipt-divider { border: none; border-top: 1px dashed #000; margin: 10px 0; }
+
+/* Topbar actions */
+.results-topbar-actions { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+
+/* ── Dispatch Decision Banner (most important UI element) ── */
+.dispatch-banner { border-radius: var(--r-lg); padding: 20px 22px; margin-bottom: 16px; display: flex; align-items: flex-start; gap: 16px; border: 1.5px solid; }
+.dispatch-banner--self   { background: var(--dispatch-self-bg);   border-color: var(--dispatch-self-border); }
+.dispatch-banner--remote { background: var(--dispatch-remote-bg); border-color: var(--dispatch-remote-border); }
+.dispatch-banner--onsite { background: var(--dispatch-onsite-bg); border-color: var(--dispatch-onsite-border); }
+
+.dispatch-banner-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.dispatch-banner-icon--self   { background: var(--dispatch-self-color); }
+.dispatch-banner-icon--remote { background: var(--dispatch-remote-color); }
+.dispatch-banner-icon--onsite { background: var(--dispatch-onsite-color); }
+
+.dispatch-banner-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 4px; }
+.dispatch-banner--self   .dispatch-banner-eyebrow { color: var(--dispatch-self-color); }
+.dispatch-banner--remote .dispatch-banner-eyebrow { color: var(--dispatch-remote-color); }
+.dispatch-banner--onsite .dispatch-banner-eyebrow { color: var(--dispatch-onsite-color); }
+
+.dispatch-banner-title { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+.dispatch-banner--self   .dispatch-banner-title { color: var(--dispatch-self-text); }
+.dispatch-banner--remote .dispatch-banner-title { color: var(--dispatch-remote-text); }
+.dispatch-banner--onsite .dispatch-banner-title { color: var(--dispatch-onsite-text); }
+
+.dispatch-banner-meta { font-size: 13px; line-height: 1.5; }
+.dispatch-banner--self   .dispatch-banner-meta { color: var(--dispatch-self-text); opacity: 0.8; }
+.dispatch-banner--remote .dispatch-banner-meta { color: var(--dispatch-remote-text); opacity: 0.8; }
+.dispatch-banner--onsite .dispatch-banner-meta { color: var(--dispatch-onsite-text); opacity: 0.8; }
+
+/* ── Conclusion banner ── */
+.result-banner { background: var(--dark); border-radius: var(--r-lg); padding: 18px 22px; margin-bottom: 16px; display: flex; align-items: center; gap: 16px; }
+.result-banner-icon { background: var(--primary); width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.result-banner-label { font-size: 10px; color: #94A3B8; letter-spacing: 0.5px; font-weight: 700; margin-bottom: 3px; text-transform: uppercase; }
+.result-banner-title { font-size: 17px; font-weight: 700; color: #fff; }
+.result-banner-meta { font-size: 13px; color: #94A3B8; margin-top: 2px; }
+
+/* Company info bar */
+.company-bar { display: flex; gap: 20px; font-size: 13px; margin-bottom: 14px; flex-wrap: wrap; }
+.company-bar-label { color: var(--text-faint); margin-right: 3px; }
+
+/* Result list */
+.result-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; }
+
+/* Result card */
+.result-card { background: var(--white); border-radius: var(--r-lg); border: 1.5px solid var(--border); padding: 16px 20px; }
+.result-card--top { background: var(--primary-light); border-color: var(--primary); }
+
+.result-card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; gap: 12px; }
+.result-card-left { display: flex; align-items: center; gap: 10px; }
+.result-rank { width: 28px; height: 28px; border-radius: 8px; background: #F1F5F9; color: #64748B; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800; flex-shrink: 0; }
+.result-rank--1 { background: var(--primary); color: #fff; }
+.result-rank--2 { background: #818CF8; color: #fff; }
+.result-name { font-weight: 700; font-size: 15px; color: var(--dark); }
+.result-dispatch-row { display: flex; align-items: center; gap: 6px; margin-top: 3px; }
+.result-cf-block { text-align: right; flex-shrink: 0; }
+.result-cf-value { font-size: 24px; font-weight: 800; line-height: 1; }
+.result-cf-label { font-size: 10px; color: var(--text-faint); margin-top: 2px; }
+
+/* CF progress */
+.cf-progress-track { background: var(--border); border-radius: var(--r-pill); height: 5px; overflow: hidden; margin-bottom: 10px; }
+.cf-progress-fill { height: 100%; border-radius: var(--r-pill); transition: width 0.8s ease; }
+
+/* Solusi block */
+.result-solution { border-radius: var(--r-md); padding: 10px 14px; margin-top: 6px; font-size: 12.5px; line-height: 1.6; }
+
+/* Matched gejala */
+.result-gejala-label { color: var(--text-faint); margin-bottom: 6px; }
+.result-gejala-list { display: flex; flex-wrap: wrap; gap: 5px; }
+.gejala-tag { background: #F1F5F9; border-radius: 5px; padding: 2px 8px; font-size: 12px; color: var(--text-sub); }
+
+/* Footer */
+.results-footer { text-align: center; padding: 20px 0 8px; }
+
+/* Empty state */
+.empty-state { text-align: center; padding: 48px 24px; }
+.empty-state-icon { margin: 0 auto 12px; color: var(--text-faint); }
+.empty-state-text { color: var(--text-muted); margin-bottom: 20px; line-height: 1.6; }

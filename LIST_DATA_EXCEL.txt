@@ -1,0 +1,259 @@
+📋 DATA LENGKAP DARI EXCEL - UNTUK PERBANDINGAN MANUAL
+================================================================
+
+## 1️⃣ GEJALA (49 Total)
+
+┌─────────────────────────────────────────────────────────────┐
+│ BASIC SYMPTOMS (G01-G10)                                    │
+├──────┬───────────────────────────────────────────────────────┤
+│ G01  │ WiFi terasa lambat                                    │
+│ G02  │ Tidak bisa terhubung ke WiFi                          │
+│ G03  │ WiFi sering putus nyambung                            │
+│ G04  │ Internet connected tetapi tidak bisa browsing         │
+│ G05  │ Sinyal WiFi lemah                                     │
+│ G06  │ Semua perangkat tidak mendapat internet               │
+│ G07  │ Hanya satu perangkat yang bermasalah                  │
+│ G08  │ Ping tinggi / lag saat meeting atau gaming            │
+│ G09  │ Router atau access point sering restart sendiri       │
+│ G10  │ Tidak bisa membuka website tertentu                   │
+└──────┴───────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│ MODEM INDICATORS (G11-G12)                                  │
+├──────┬───────────────────────────────────────────────────────┤
+│ G11  │ indikator LOS Modem Menyala                           │
+│ G12  │ Indikator PON Modem Menyala                           │
+└──────┴───────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│ NETWORK PERFORMANCE (G13-G32)                               │
+├──────┬───────────────────────────────────────────────────────┤
+│ G13  │ WiFi hanya bermasalah pada jam tertentu               │
+│ G14  │ Router terasa sangat panas                            │
+│ G15  │ Modem tidak mendapatkan IP WAN                        │
+│ G16  │ Lampu internet modem berkedip terus                   │
+│ G17  │ WiFi muncul tetapi tidak ada akses internet           │
+│ G18  │ Sering muncul pesan "IP conflict detected"            │
+│ G19  │ Perangkat harus reconnect berkali-kali                │
+│ G20  │ Kecepatan download sangat lambat tetapi upload normal  │
+│ G21  │ Kecepatan upload sangat lambat tetapi download normal  │
+│ G22  │ Website tertentu diblokir atau tidak dapat diakses    │
+│ G23  │ Semua perangkat mendapat IP yang sama                 │
+│ G24  │ Router sering freeze/hang                             │
+│ G25  │ Sinyal WiFi hilang saat jauh sedikit dari router      │
+│ G26  │ Ping normal tetapi browsing lambat                    │
+│ G27  │ Game online disconnect terus                          │
+│ G28  │ YouTube buffering terus                               │
+│ G29  │ WiFi connect tetapi "No Internet Access"              │
+│ G30  │ Router reboot saat banyak perangkat terhubung         │
+│ G31  │ Tidak bisa mendapatkan alamat IP otomatis             │
+│ G32  │ DNS resolving sangat lambat                           │
+└──────┴───────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│ HARDWARE & CONNECTIONS (G33-G40)                            │
+├──────┬───────────────────────────────────────────────────────┤
+│ G33  │ Kabel LAN terasa longgar                              │
+│ G34  │ Lampu LAN modem tidak menyala                         │
+│ G35  │ Modem sering restart setelah listrik turun            │
+│ G36  │ WiFi 2.4GHz normal tetapi 5GHz hilang                 │
+│ G37  │ WiFi 5GHz normal tetapi 2.4GHz bermasalah             │
+│ G38  │ Internet putus saat hujan                             │
+│ G39  │ LOS berkedip merah                                    │
+│ G40  │ PON berkedip tidak normal                             │
+└──────┴───────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│ SPECIFIC ISSUES (G41-G50)                                   │
+├──────┬───────────────────────────────────────────────────────┤
+│ G41  │ Sinyal WiFi penuh tetapi internet lambat              │
+│ G42  │ DHCP failed pada perangkat                            │
+│ G43  │ Router tidak bisa menyimpan konfigurasi               │
+│ G44  │ Sering diminta login ulang hotspot                    │
+│ G45  │ Website HTTPS tertentu gagal dibuka                   │
+│ G46  │ Internet normal melalui kabel tetapi WiFi lambat      │
+│ G47  │ Ada perangkat asing terhubung ke jaringan             │
+│ G48  │ Router tidak dapat diakses melalui 192.168.x.x        │
+│ G49  │ Koneksi putus saat microwave/perangkat elektronik aktif│
+│ G50  │ Ping ke gateway timeout                               │
+└──────┴───────────────────────────────────────────────────────┘
+
+---
+
+## 2️⃣ PENYEBAB UTAMA (18 Total)
+
+┌──────┬──────────────────────────────────────────────────────────┐
+│ P01  │ Bandwidth penuh / overload pengguna                      │
+│ P02  │ Gangguan dari ISP utama                                  │
+│ P03  │ Router overload                                          │
+│ P04  │ Access Point rusak                                       │
+│ P05  │ Kabel putus / longgar                                    │
+│ P06  │ DHCP bermasalah                                          │
+│ P07  │ Konflik IP Address                                       │
+│ P08  │ Interferensi sinyal WiFi                                 │
+│ P09  │ Jarak perangkat terlalu jauh                             │
+│ P10  │ Perangkat client bermasalah (Modem)                      │
+│ P11  │ DNS bermasalah                                           │
+│ P12  │ Firmware router bermasalah                               │
+│ P13  │ Adaptor/power router tidak stabil                        │
+│ P14  │ Firewall atau blokir website                             │
+│ P15  │ Konfigurasi router salah                                 │
+│ P16  │ TX RX power tidak cukup (standar)                        │
+│ P17  │ Kabel tertekuk                                           │
+│ P18  │ (R17 - belum labeled)                                    │
+└──────┴──────────────────────────────────────────────────────────┘
+
+---
+
+## 3️⃣ RULES (17 Total) - Format: Gejala → Penyebab
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ R01: Bandwidth Overload                                             │
+├──────────────────────────────────────────────────────────────────────┤
+│ Gejala: G01, G08, G13, G20, G21, G27, G28, G30, G41                │
+│ → Penyebab: P01 (Bandwidth penuh / overload pengguna)               │
+│ CF Expert: 0.8 | Dispatch: Tidak perlu teknisi (SELF)               │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ R02: ISP Issues & Modem Problems                                    │
+├──────────────────────────────────────────────────────────────────────┤
+│ Gejala: G04, G06, G11, G15, G16, G17, G29, G38, G39, G40           │
+│ → Penyebab: P03 (Router overload) - WAIT: Should be P02?            │
+│ CF Expert: 0.7 | Dispatch: Remote troubleshooting (REMOTE)          │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ R03: Hardware Issues                                                │
+├──────────────────────────────────────────────────────────────────────┤
+│ Gejala: G09, G14, G24, G30, G43, G48                               │
+│ → Penyebab: P04 (Access Point rusak)                                │
+│ CF Expert: 0.6 | Dispatch: Tidak perlu teknisi (SELF)               │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ R04: Signal Strength & Distance                                     │
+├──────────────────────────────────────────────────────────────────────┤
+│ Gejala: G05, G25, G36, G37, G46, G49                               │
+│ → Penyebab: P05 (Kabel putus / longgar)                             │
+│ CF Expert: 0.9 | Dispatch: Tidak perlu teknisi (SELF)               │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ R05: Network Connection Issues                                      │
+├──────────────────────────────────────────────────────────────────────┤
+│ Gejala: G03, G06, G33, G34, G38, G50                               │
+│ → Penyebab: P06 (DHCP bermasalah)                                   │
+│ CF Expert: 0.9 | Dispatch: Teknisi onsite (ONSITE)                  │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ R06: DHCP & IP Allocation                                           │
+├──────────────────────────────────────────────────────────────────────┤
+│ Gejala: G06, G23, G31, G42                                         │
+│ → Penyebab: P07 (Konflik IP Address)                                │
+│ CF Expert: 0.7 | Dispatch: Remote troubleshooting (REMOTE)          │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ R07: Connection & Authentication                                    │
+├──────────────────────────────────────────────────────────────────────┤
+│ Gejala: G02, G18, G23, G31                                         │
+│ → Penyebab: P08 (Interferensi sinyal WiFi)                          │
+│ CF Expert: 0.8 | Dispatch: Remote troubleshooting (REMOTE)          │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ R08: Latency & Distance Issues                                      │
+├──────────────────────────────────────────────────────────────────────┤
+│ Gejala: G05, G08, G25, G49                                         │
+│ → Penyebab: P09 (Jarak perangkat terlalu jauh)                      │
+│ CF Expert: 0.8 | Dispatch: Tidak perlu teknisi (SELF)               │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ R09: Signal & Speed Issues                                          │
+├──────────────────────────────────────────────────────────────────────┤
+│ Gejala: G05, G25, G41, G46                                         │
+│ → Penyebab: P10 (Perangkat client bermasalah - Modem)               │
+│ CF Expert: 0.7 | Dispatch: Teknisi onsite (ONSITE)                  │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ R10: Device Connectivity Issues                                     │
+├──────────────────────────────────────────────────────────────────────┤
+│ Gejala: G07, G19, G42                                              │
+│ → Penyebab: P11 (DNS bermasalah)                                    │
+│ CF Expert: 0.9 | Dispatch: Teknisi onsite (ONSITE)                  │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ R11: Website & DNS Issues                                           │
+├──────────────────────────────────────────────────────────────────────┤
+│ Gejala: G10, G26, G32, G45                                         │
+│ → Penyebab: P12 (Firmware router bermasalah)                        │
+│ CF Expert: 0.6 | Dispatch: Tidak perlu teknisi (SELF)               │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ R12: Router Instability                                             │
+├──────────────────────────────────────────────────────────────────────┤
+│ Gejala: G09, G24, G43, G48                                         │
+│ → Penyebab: P13 (Adaptor/power router tidak stabil)                 │
+│ CF Expert: 0.7 | Dispatch: Remote troubleshooting (REMOTE)          │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ R13: Firewall & Blocking Issues                                     │
+├──────────────────────────────────────────────────────────────────────┤
+│ Gejala: G09, G14, G35                                              │
+│ → Penyebab: P14 (Firewall atau blokir website)                      │
+│ CF Expert: [None] | Dispatch: [None]                                │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ R14: Website Blocking                                               │
+├──────────────────────────────────────────────────────────────────────┤
+│ Gejala: G10, G22, G45                                              │
+│ → Penyebab: P15 (Konfigurasi router salah)                          │
+│ CF Expert: [None] | Dispatch: [None]                                │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ R15: Connection & Access Issues                                     │
+├──────────────────────────────────────────────────────────────────────┤
+│ Gejala: G17, G29, G31, G48                                         │
+│ → Penyebab: P16 (TX RX power tidak cukup)                           │
+│ CF Expert: [None] | Dispatch: [None]                                │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ R16: Modem Indicator Issues                                         │
+├──────────────────────────────────────────────────────────────────────┤
+│ Gejala: G11, G39, G40                                              │
+│ → Penyebab: P17 (Kabel tertekuk)                                    │
+│ CF Expert: [None] | Dispatch: [None]                                │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ R17: Network Stability                                              │
+├──────────────────────────────────────────────────────────────────────┤
+│ Gejala: G03, G33, G34, G50                                         │
+│ → Penyebab: P18 (Unknown/Not Labeled)                               │
+│ CF Expert: [None] | Dispatch: [None]                                │
+└──────────────────────────────────────────────────────────────────────┘
+
+---
+
+## 📊 SUMMARY
+
+✅ Total Gejala: 49 (G01-G50)
+✅ Total Penyebab: 18 (P01-P18, tapi P18 tidak terlabeli)
+✅ Total Rules: 17 (R01-R17)
+
+⚠️ Notes:
+- R13-R17 tidak memiliki CF Expert value & Dispatch info
+- P18 tidak terlabeli dengan jelas
+- Format Rules: Multiple gejala per rule (berbeda dengan code saat ini)
+
+Sekarang bisa dibandingkan dengan code yang ada! 👍

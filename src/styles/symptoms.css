@@ -1,0 +1,41 @@
+/* ── Symptoms page ───────────────────────────────────────── */
+.symptoms-page { background: var(--bg); min-height: 600px; }
+.symptoms-count { margin-left: auto; color: #94A3B8; font-size: 13px; }
+.symptoms-count-num { color: #38BDF8; font-weight: 700; }
+
+.company-form { margin-bottom: 16px; }
+.company-form-title { font-weight: 600; font-size: 14px; color: var(--text-sub); margin-bottom: 12px; }
+.company-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.company-form-grid--3 { grid-template-columns: 1fr 1fr 1fr; }
+@media (max-width: 520px) { .company-form-grid, .company-form-grid--3 { grid-template-columns: 1fr; } }
+
+.search-wrapper { position: relative; margin-bottom: 14px; }
+.search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-faint); pointer-events: none; }
+.search-input { padding-left: 36px; }
+
+.symptoms-hint { color: var(--text-muted); font-size: 13px; margin-bottom: 14px; }
+
+.symptom-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px; margin-bottom: 20px; }
+
+.symptom-card { background: var(--white); border: 1.5px solid var(--border); border-radius: var(--r-md); padding: 11px 13px; cursor: pointer; transition: border-color 0.15s, background 0.15s; user-select: none; }
+.symptom-card:hover { border-color: #7DD3FC; }
+.symptom-card--selected { background: var(--primary-light); border-color: var(--primary); }
+
+.symptom-card-row { display: flex; align-items: flex-start; gap: 8px; }
+.symptom-checkbox { width: 20px; height: 20px; border-radius: 5px; border: 2px solid var(--border); background: transparent; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; transition: all 0.15s; }
+.symptom-checkbox--checked { background: var(--primary); border-color: var(--primary); }
+
+.symptom-label-wrap { flex: 1; min-width: 0; }
+.symptom-name { font-size: 13px; font-weight: 400; color: var(--text-sub); line-height: 1.35; }
+.symptom-name--selected { font-weight: 600; color: #0C4A6E; }
+.symptom-desc { font-size: 11px; color: var(--text-faint); line-height: 1.4; margin-top: 2px; }
+.symptom-desc--selected { color: #0284C7; }
+
+.confidence-row { display: flex; gap: 4px; margin-top: 9px; }
+.cf-btn { flex: 1; padding: 3px 0; border-radius: 5px; font-size: 11.5px; font-weight: 600; cursor: pointer; border: 1px solid var(--border); background: #F8FAFC; color: var(--text-faint); font-family: var(--font-body); transition: all 0.1s; }
+.cf-btn:hover { border-color: var(--primary); color: var(--primary); }
+.cf-btn--active { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+.analyze-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.analyze-hint { font-size: 14px; color: var(--text-sub); }
+.analyze-hint strong { color: var(--primary); font-weight: 700; }

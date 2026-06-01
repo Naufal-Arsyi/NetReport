@@ -1,0 +1,133 @@
+/* ────────────────────────────────────────────────────────────
+   global.css — Design tokens, reset, komponen UI bersama
+   Tema: Blue/Teal — Sistem Pelaporan Gangguan WiFi
+   ──────────────────────────────────────────────────────────── */
+
+:root {
+  /* Brand colors */
+  --primary:        #0284C7;
+  --primary-dark:   #0369A1;
+  --primary-light:  #F0F9FF;
+  --primary-border: #BAE6FD;
+
+  /* Dark backgrounds */
+  --dark:           #0A1628;
+  --dark-2:         #0F2040;
+
+  /* Surfaces */
+  --bg:             #F1F5F9;
+  --white:          #ffffff;
+
+  /* Text */
+  --text-main:      #0A1628;
+  --text-sub:       #334155;
+  --text-muted:     #64748B;
+  --text-faint:     #94A3B8;
+
+  /* Borders */
+  --border:         #E2E8F0;
+  --border-focus:   #0284C7;
+
+  /* Dispatch colors */
+  --dispatch-self-color:   #059669;
+  --dispatch-self-bg:      #ECFDF5;
+  --dispatch-self-border:  #A7F3D0;
+  --dispatch-self-text:    #065F46;
+
+  --dispatch-remote-color:  #0284C7;
+  --dispatch-remote-bg:     #F0F9FF;
+  --dispatch-remote-border: #BAE6FD;
+  --dispatch-remote-text:   #0C4A6E;
+
+  --dispatch-onsite-color:  #DC2626;
+  --dispatch-onsite-bg:     #FEF2F2;
+  --dispatch-onsite-border: #FECACA;
+  --dispatch-onsite-text:   #7F1D1D;
+
+  /* Accent */
+  --teal:           #0D9488;
+  --green:          #16A34A;
+  --wa-green:       #25D366;
+
+  /* Blue info block */
+  --info-bg:        #EFF6FF;
+  --info-text:      #1D4ED8;
+  --info-strong:    #1E3A5F;
+
+  /* Typography */
+  --font-display:   'Syne', sans-serif;
+  --font-body:      'DM Sans', system-ui, sans-serif;
+
+  /* Radii */
+  --r-sm:  6px;
+  --r-md:  10px;
+  --r-lg:  14px;
+  --r-xl:  16px;
+  --r-pill: 99px;
+}
+
+/* Reset */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-body); background: var(--bg); color: var(--text-main); -webkit-font-smoothing: antialiased; }
+
+/* Layout */
+.container { max-width: 780px; margin: 0 auto; padding: 0 16px; }
+.page { min-height: 600px; font-family: var(--font-body); }
+
+/* Topbar */
+.topbar { background: var(--dark); padding: 14px 24px; display: flex; align-items: center; gap: 12px; }
+.topbar-right { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+
+/* Logo */
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo-icon { width: 34px; height: 34px; background: var(--primary); border-radius: 9px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.logo-name { font-family: var(--font-display); font-size: 20px; font-weight: 800; letter-spacing: -0.5px; color: #fff; }
+.logo-name--sm { font-size: 16px; }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: none; border-radius: var(--r-md); font-family: var(--font-body); font-size: 15px; font-weight: 600; padding: 13px 28px; cursor: pointer; transition: background 0.15s, opacity 0.15s; text-decoration: none; white-space: nowrap; }
+.btn:disabled { background: #CBD5E1 !important; cursor: not-allowed; }
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-primary:hover:not(:disabled) { background: var(--primary-dark); }
+.btn-outline { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.25); }
+.btn-outline:hover { border-color: rgba(255,255,255,0.5); }
+.btn-ghost { background: none; color: var(--text-sub); border: 1px solid var(--border); padding: 9px 16px; font-size: 13px; }
+.btn-ghost:hover { background: var(--bg); }
+.btn-green { background: var(--green); color: #fff; padding: 11px; width: 100%; }
+.btn-green:hover { background: #15803D; }
+.btn-wa { background: var(--wa-green); color: #fff; padding: 9px 16px; font-size: 13px; border-radius: 8px; }
+.btn-wa-block { background: var(--wa-green); color: #fff; padding: 11px; width: 100%; font-size: 14px; border-radius: var(--r-md); }
+.btn-sm { padding: 8px 16px; font-size: 13px; }
+
+/* Card */
+.card { background: var(--white); border-radius: var(--r-lg); border: 0.5px solid var(--border); padding: 16px 20px; }
+
+/* Input */
+.input { padding: 10px 12px; border-radius: 8px; border: 1.5px solid var(--border); font-size: 14px; width: 100%; outline: none; font-family: var(--font-body); color: var(--text-main); background: var(--white); transition: border-color 0.15s; }
+.input:focus { border-color: var(--border-focus); }
+.input::placeholder { color: var(--text-faint); }
+
+/* Badge */
+.badge { font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: var(--r-pill); letter-spacing: 0.3px; white-space: nowrap; }
+.badge-pending      { background: #FEF2F2; color: #DC2626; }
+.badge-in-progress  { background: #FFF7ED; color: #D97706; }
+.badge-done         { background: #F0FDF4; color: #16A34A; }
+
+/* Dispatch badge */
+.badge-self   { background: var(--dispatch-self-bg);   color: var(--dispatch-self-color); }
+.badge-remote { background: var(--dispatch-remote-bg); color: var(--dispatch-remote-color); }
+.badge-onsite { background: var(--dispatch-onsite-bg); color: var(--dispatch-onsite-color); }
+
+/* Modal */
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.55); display: flex; align-items: center; justify-content: center; z-index: 100; padding: 16px; }
+.modal-box { background: var(--white); border-radius: var(--r-xl); padding: 28px; width: 100%; max-width: 420px; position: relative; }
+.modal-close { position: absolute; top: 16px; right: 16px; background: none; border: none; cursor: pointer; display: flex; color: var(--text-faint); }
+
+/* Typography helpers */
+.section-title { font-family: var(--font-display); font-weight: 800; color: var(--dark); }
+.text-muted { color: var(--text-muted); font-size: 13px; }
+.label-caps { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; }
+
+/* Print */
+@media print { .no-print { display: none !important; } .print-show { display: block !important; } }
+.print-show { display: none; }
